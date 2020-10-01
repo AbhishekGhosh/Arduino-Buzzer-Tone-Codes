@@ -13,7 +13,7 @@ char notes[] = "GGAGcB GGAGdc GGxecBA yyecdc";
 
 int beats[] = { 2, 2, 8, 8, 8, 16, 1, 2, 2, 8, 8,8, 16, 1, 2,2,8,8,8,8,16, 1,2,2,8,8,8,16 };
 
-int tempo = 150;
+int temporary = 150;
 
 void playTone(int tone, int duration) {
 
@@ -73,17 +73,17 @@ for (int i = 0; i < length; i++) {
 
    if (notes[i] == ' ') {
 
-     delay(beats[i] * tempo); // rest
+     delay(beats[i] * temporary); // rest
 
    } else {
 
-     playNote(notes[i], beats[i] * tempo);
+     playNote(notes[i], beats[i] * temporary);
 
    }
 
    // pause between notes
 
-   delay(tempo);
+   delay(temporary);
 
 }
 
